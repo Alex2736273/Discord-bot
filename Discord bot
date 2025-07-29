@@ -1,0 +1,7 @@
+js const {Client, Gateway IntentBits } = require('discord.js'); const client = new Client({intents: [GatewayIntentBits.Guilds, Gateway IntentBits.GuildMessages, Gateway IntentBits.MessageContent]});
+
+client.once('ready', () => { console.log('Botul este online!'); });
+
+client.on('messageCreate', message => { if (message.author.bot) return; if (message.content.toLowerCase() === '!ping') { message.channel.send('Pong!'); } });
+
+client.login('MTM5OTY5MDM4ODgzNDQ4NDM3NQ.GeNo5p.z67jV0IDuD1V3Zg_829jZyn6y9kXEq9wW9apzk') ;
