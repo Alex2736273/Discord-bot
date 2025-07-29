@@ -1,0 +1,9 @@
+js const {Client, Gateway IntentBits } = require('discord.js'); const client = new Client({intents: [GatewayIntentBits.Guilds, Gateway IntentBits.GuildMessages, Gateway IntentBits.MessageContent ]});
+
+client.once('ready', () => { console.log('Botul este online!'); });
+
+client.on('messageCreate', message => { if (message.author.bot) return; if (message.content.toLowerCase() === '!ping') { message.channel.send('Pong!'); } });js const {Client, Gateway IntentBits } = require('discord.js'); const client = new Client({intents: [GatewayIntentBits.Guilds, Gateway IntentBits.GuildMessages, Gateway IntentBits.MessageContent ]});
+
+client.once('ready', () => { console.log('Botul este online!'); });
+
+client.on('messageCreate', message => { if (message.author.bot) return; if (message.content.toLowerCase() === '!ping') { message.channel.send('Pong!'); } });
